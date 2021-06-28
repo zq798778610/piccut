@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="JavaFXApp">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaFXApp</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="JavaFXApp.jar">
+        <element id="module-output" name="cutpic" />
+      </element>
+      <element id="library" level="project" name="commons-io-2.4" />
+      <element id="library" level="project" name="thumbnailator-0.4.8" />
+    </root>
+  </artifact>
+</component>

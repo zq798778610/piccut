@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox style="-fx-alignment: center;center;-fx-spacing:20" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+         <children>
+            <VBox style="-fx-alignment: center;-fx-spacing:20" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+               <children>
+                  <HBox style="-fx-alignment: center;-fx-spacing:10" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                     <children>
+                        <Label style="-fx-alignment: center;" text="图片文件夹:  " />
+                        <TextField fx:id="tf_choice_dir" onMouseClicked="#choiceDir" prefHeight="23.0" prefWidth="265.0" promptText="选择图片" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="lb_image_size" text="图片尺寸" />
+                  <Pane GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                     <children>
+                        <ImageView fx:id="iv_pic" fitHeight="236.0" fitWidth="436.0" pickOnBounds="true" preserveRatio="true" />
+                        <Pane fx:id="pane_cut" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </Pane>
+                  <HBox style="-fx-alignment: center;" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                     <children>
+                        <Label text="x: " />
+                        <TextField fx:id="tf_x" prefHeight="23.0" prefWidth="81.0" text="1000" />
+                        <Label text="         y: " />
+                        <TextField fx:id="tf_y" prefHeight="23.0" prefWidth="81.0" text="1280" />
+                        <Label text="         " />
+                        <Button fx:id="btn_cut" mnemonicParsing="false" onMouseClicked="#cut" text="裁剪">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <TextArea fx:id="ta_message" prefWidth="200.0" style="padding:0 0 0 20;" GridPane.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
